@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ProductsListApp</string>
+    <string name="products">Products</string>
+    <string name="search_products">Search Products</string>
+    <string name="_products_found">%s products found</string>
 </resources>
