@@ -73,10 +73,10 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0")
 
     // Hilt
-    implementation ("com.google.dagger:hilt-android:2.44")
+    implementation ("com.google.dagger:hilt-android:2.50")
     implementation ("androidx.legacy:legacy-support-v4:1.0.0")
     implementation ("androidx.recyclerview:recyclerview:1.3.2")
-    kapt ("com.google.dagger:hilt-android-compiler:2.44")
+    kapt ("com.google.dagger:hilt-android-compiler:2.50")
 
     // Retrofit
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
