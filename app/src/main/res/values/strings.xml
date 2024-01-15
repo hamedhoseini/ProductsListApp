@@ -3,4 +3,6 @@
     <string name="products">Products</string>
     <string name="search_products">Search Products</string>
     <string name="_products_found">%s products found</string>
+    <string name="there_is_no_products">There is no products</string>
+    <string name="something_went_wrong">Something went wrong</string>
 </resources>
