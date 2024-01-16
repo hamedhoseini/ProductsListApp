@@ -1,4 +1,4 @@
-package com.mihahoni.productslistapp.ui.product
+package com.mihahoni.productslistapp.ui.components
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer

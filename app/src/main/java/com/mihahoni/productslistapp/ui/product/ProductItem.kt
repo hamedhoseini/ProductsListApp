@@ -24,6 +24,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.mihahoni.productslistapp.data.model.Product
+import com.mihahoni.productslistapp.ui.components.StarRatingBar
 import com.mihahoni.productslistapp.ui.theme.Gray
 import com.mihahoni.productslistapp.ui.theme.Red
 
