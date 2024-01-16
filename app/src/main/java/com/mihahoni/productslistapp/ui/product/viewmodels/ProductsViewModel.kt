@@ -26,19 +26,21 @@ class ProductsViewModel @Inject constructor(
     val searchText = _searchText.asStateFlow()
 
     private val _productsList = MutableStateFlow(emptyList<Product>())
-    val productsList = searchText
-        .combine(_productsList) { text, productsList ->
-            if (text.isBlank()) {
-                _productsList.asStateFlow()
-            }
-            productsList.filter { product ->
-                product.title.uppercase().contains(text.trim().uppercase())
-            }
-        }.stateIn(
-            scope = viewModelScope,
-            started = SharingStarted.WhileSubscribed(1000),
-            initialValue = _productsList.value
-        )
+    val productsList by lazy {
+        searchText
+            .combine(_productsList) { text, productsList ->
+                if (text.isBlank()) {
+                    _productsList.asStateFlow()
+                }
+                productsList.filter { product ->
+                    product.title.uppercase().contains(text.trim().uppercase())
+                }
+            }.stateIn(
+                scope = viewModelScope,
+                started = SharingStarted.WhileSubscribed(1000),
+                initialValue = _productsList.value
+            )
+    }
 
     fun onSearchTextChange(text: String) {
         _searchText.value = text
