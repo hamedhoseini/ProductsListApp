@@ -26,12 +26,12 @@ import com.mihahoni.productslistapp.ui.theme.VeryLightGray
 
 @Composable
 fun ProductsPage(productViewModel: ProductsViewModel) {
+
+    val productList by productViewModel.productsList.collectAsState()
+    val productFetchingState = productViewModel.productsFetchingState.collectAsState()
+    val searchText by productViewModel.searchText.collectAsState()
+
     Surface(modifier = Modifier.fillMaxSize(), color = VeryLightGray) {
-
-        val productList by productViewModel.productsList.collectAsState()
-        val productFetchingState = productViewModel.productsFetchingState.collectAsState()
-        val searchText by productViewModel.searchText.collectAsState()
-
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -88,7 +88,6 @@ fun ProductsPage(productViewModel: ProductsViewModel) {
                     }
                 }
             }
-
         }
     }
 }

@@ -1,7 +1,4 @@
-import android.util.Log
 import com.mihahoni.productslistapp.data.StateHandler
-import com.mihahoni.productslistapp.data.model.Product
-import com.mihahoni.productslistapp.data.model.ProductRating
 import com.mihahoni.productslistapp.domain.ProductsUseCase
 import com.mihahoni.productslistapp.fakeProductList
 import com.mihahoni.productslistapp.ui.product.viewmodels.ProductsViewModel
@@ -13,11 +10,8 @@ import kotlinx.coroutines.test.runBlockingTest
 import kotlinx.coroutines.test.setMain
 import org.junit.After
 import org.junit.Before
-import org.junit.Rule
 import org.junit.Test
 import org.mockito.Mock
-import org.mockito.Mockito.times
-import org.mockito.Mockito.verify
 import org.mockito.Mockito.`when`
 import org.mockito.MockitoAnnotations
 

@@ -41,7 +41,6 @@ fun ProductItem(productItem: Product) {
         )
     ) {
         Row(modifier = Modifier.fillMaxSize()) {
-
             AsyncImage(
                 model = productItem.image,
                 contentScale = ContentScale.Inside,
